@@ -1,0 +1,36 @@
+.card{
+    margin-top: 50px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 200px;
+    border-radius: 20px;
+    grid-column: auto/span 12;
+    grid-column-gap: 32px;
+
+    overflow: hidden;
+}
+
+.card--state-dark{
+    background-color: rgb(44, 144, 180);
+    border: 2px solid rgba(67, 148, 234, 0.56);
+}
+
+.card--state-light{
+    background-color: rgba(202, 216, 43, 0.782);
+    border: 2px solid rgba(234, 220, 67, 0.56);
+}
+
+
+.card--image{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.card--text{
+    font-size: 0.8rem;
+    padding: 10px;
+}
+

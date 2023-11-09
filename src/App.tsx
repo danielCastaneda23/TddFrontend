@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import React, { useState } from 'react';
+
+import Card from './components/Card/Card';
+import logo from './logo.svg';
+
 function App() {
+  const [lightTheme, setLightTheme] = useState<Boolean>(false)
+  const handleOnClick = () => {
+    setLightTheme(!lightTheme)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='container'>
+      <button className='button--position' onClick={handleOnClick}>Change Theme</button>
+      <Card theme={lightTheme} />
+    </main>
   );
 }
 
