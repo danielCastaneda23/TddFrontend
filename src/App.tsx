@@ -3,7 +3,6 @@ import './App.css';
 import React, { useState } from 'react';
 
 import Card from './components/Card/Card';
-import logo from './logo.svg';
 
 function App() {
   const [lightTheme, setLightTheme] = useState<Boolean>(false)
