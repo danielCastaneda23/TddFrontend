@@ -1,0 +1,13 @@
+name: CI Test
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Test
+      run: npm run test:ci
+    
